@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Tue Sep 07 17:57:23 BRT 2021","Tue Sep 07 17:57:24 BRT 2021","184","","Tests POST Pokemon Team","","","","[CT_001] - Create a new Pokemon Team",""
-"passed","Tue Sep 07 17:57:24 BRT 2021","Tue Sep 07 17:57:24 BRT 2021","109","","Tests POST Pokemon Team","","","","[CT_002] - Create a new Pokemon Team informing a teamName that already exists",""
