@@ -1,6 +1,6 @@
 # Overview
 
-Automation project for projetc
+Automation project for
 [PokemonTeam](https://github.com/LucasManciniDaSilva/PokemonTeam) using Cypress,
 Cucumber and Allure.
 
