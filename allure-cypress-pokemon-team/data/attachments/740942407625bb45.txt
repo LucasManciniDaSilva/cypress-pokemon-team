@@ -1,0 +1,9 @@
+{
+  "teamName": "pokemonTeam0.3507447954606595",
+  "firstPokemon": "Bulbasaur",
+  "secondPokemon": "Squirtle",
+  "thirdPokemon": "Bagon",
+  "fourthPokemon": "Mudkip",
+  "fifthPokemon": "Jolteon",
+  "lastPokemon": "Zorua"
+}

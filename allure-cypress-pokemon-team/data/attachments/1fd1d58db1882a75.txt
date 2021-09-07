@@ -1,0 +1,6 @@
+[
+  {
+    "code": "422.003",
+    "description": "Team Already Exists"
+  }
+]

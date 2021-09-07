@@ -1,0 +1,21 @@
+[ {
+  "uid" : "ad5efd548e96b4b2",
+  "name" : "[CT_002] - Create a new Pokemon Team informing a teamName that already exists",
+  "time" : {
+    "start" : 1631048244172,
+    "stop" : 1631048244281,
+    "duration" : 109
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5a20e363b724382e",
+  "name" : "[CT_001] - Create a new Pokemon Team",
+  "time" : {
+    "start" : 1631048243980,
+    "stop" : 1631048244164,
+    "duration" : 184
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

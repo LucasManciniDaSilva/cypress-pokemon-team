@@ -1,0 +1,44 @@
+{
+	"name": "cypress-pokemon-team",
+	"version": "1.0.0",
+	"description": "Automation project of cypress-pokemon-team",
+	"main": "index.js",
+	"scripts": {
+		"cy:open": "rm -rf cypress/files ; cypress open",
+		"scenario": "rm -rf cypress/files ; npx cypress open --env",
+		"scenario:run": "rm -rf cypress/files ; npx cypress run --env",
+		"cy:all": "rm -rf cypress/files ; cypress run --spec **/*.features",
+		"cy:run": "rm -rf cypress/files ; cypress run",
+		"allure:run": "npx cypress run --env allure=true ;  allure generate allure-results --clean ",
+		"cy:allure": "rm -rf allure-results ; rm -rf cypress/files  ; npx cypress run --env allure=true ; mv ../allure-reports-portal/uploads/allure-cypress-pokemon-team/history allure-results ; allure generate allure-results --clean  ; mv allure-report allure-cypress-pokemon-team ; rm -rf ../allure-reports-portal/uploads/allure-cypress-pokemon-team ; mv allure-cypress-pokemon-team ../allure-reports-portal/uploads"
+	},
+	"keywords": [
+		"testing",
+		"cypress",
+		"automation",
+		"test"
+	],
+	"author": "Lucas Mancini da Silva",
+	"license": "ISC",
+	"dependencies": {
+		"allure-commandline": "^2.13.8",
+		"cypress": "^7.2.0",
+		"cypress-cucumber-preprocessor": "^4.1.0",
+		"cypress-dark": "^1.7.14",
+		"dotenv": "^9.0.1",
+		"faker": "^5.5.3",
+		"npm-run-all": "^4.1.5",
+		"prettier": "^2.2.1",
+		"prettyjson": "^1.2.1",
+		"uuid": "^3.4.0"
+	},
+	"cypress-cucumber-preprocessor": {
+		"nonGlobalStepDefinitions": true
+	},
+	"devDependencies": {
+		"@bahmutov/cy-api": "^1.5.0",
+		"@shelex/cypress-allure-plugin": "^2.5.1",
+		"cypress-dotenv": "^1.2.2",
+		"cypress-multi-reporters": "^1.5.0"
+	}
+}

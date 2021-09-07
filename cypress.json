@@ -1,0 +1,12 @@
+{
+	"video": false,
+	"defaultCommandTimeout": 10000,
+	"testFiles": "**/*.{feature,features}",
+	"ignoreTestFiles": ["*.js", "*.md"],
+	"projectId": "tstae",
+	"screenshotsFolder": "cypress/screenshots",
+	"screenshotOnRunFailure": false,
+	"baseUrl": "http://localhost:8090",
+	"viewportHeight": 600,
+	"viewportWidth": 1000
+}
