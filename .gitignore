@@ -3,3 +3,4 @@
 .vscode
 .prettierrc
 allure-results
+/allure-cypress-pokemon-team
