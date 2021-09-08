@@ -1,6 +1,6 @@
 # Overview
 
-Automation project for projetc
+Automation project for
 [PokemonTeam](https://github.com/LucasManciniDaSilva/PokemonTeam) using Cypress,
 Cucumber and Allure.
 
@@ -30,14 +30,14 @@ To run the tests cases in the terminal it's necessary to run the command:
 
 `npm run cy:run`
 
-## Execute tests and vefity allure reports
+## Execute tests and vefiry allure reports
 
 To run the tests cases and generate a report for allure, it's necessary to run
 the command:
 
 `npm run cy:allure`
 
-After running the tests case, will be generated a report in the folder
+After running the tests case, It will be generated a report in the folder
 allure-cypress-pokemon-team. To run the allure project it's necessary to run the
 command:
 
@@ -45,7 +45,7 @@ command:
 
 ## Project Structure
 
-The project has structure like this:
+The project has a structure like this:
 
 ```
 \cypress
