@@ -10,7 +10,7 @@
 		"cy:all": "rm -rf cypress/files ; cypress run --spec **/*.features",
 		"cy:run": "rm -rf cypress/files ; cypress run",
 		"allure:run": "npx cypress run --env allure=true ;  allure generate allure-results --clean ",
-		"cy:allure": "rm -rf allure-results ; rm -rf cypress/files  ; npx cypress run --env allure=true ; mv ../allure-reports-portal/uploads/allure-cypress-pokemon-team/history allure-results ; allure generate allure-results --clean  ; mv allure-report allure-cypress-pokemon-team ; rm -rf ../allure-reports-portal/uploads/allure-cypress-pokemon-team ; mv allure-cypress-pokemon-team ../allure-reports-portal/uploads"
+		"cy:allure": "rm -rf allure-results ; rm -rf cypress/files  ; npx cypress run --env allure=true ; allure generate allure-results --clean"
 	},
 	"keywords": [
 		"testing",
