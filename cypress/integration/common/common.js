@@ -28,7 +28,9 @@ defineStep(
 
 		commonData.teamNameRequest = `pokemonTeam${generateNumber}`
 
-		let pokemonTeamRequest = createPokemonTeam(commonData.teamNameRequest)
+		commonData.pokemonTeamRequest = createPokemonTeam(
+			commonData.teamNameRequest
+		)
 
 		cy.api({
 			method: 'POST',
@@ -36,10 +38,14 @@ defineStep(
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: pokemonTeamRequest,
+			body: commonData.pokemonTeamRequest,
 		}).as('pokemon-team-request')
 
-		attFileAllure(pokemonTeamRequest, 'request', 'pokemon-team-request')
+		attFileAllure(
+			commonData.pokemonTeamRequest,
+			'request',
+			'pokemon-team-request'
+		)
 
 		cy.get('@pokemon-team-request').then(response => {
 			commonData.teamNameResponse = response.headers.teamname
@@ -51,8 +57,8 @@ defineStep(
 defineStep(
 	'Verify if returning the message {string} and response code {string}',
 	(description, status) => {
-		expect(commonDataPostTeam.responseError).to.equal(description)
+		expect(commonData.responseError).to.equal(description)
 
-		expect(commonDataPostTeam.statusCodeError).to.equal(status)
+		expect(commonData.statusCodeError).to.equal(status)
 	}
 )

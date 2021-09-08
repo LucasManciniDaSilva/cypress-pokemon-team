@@ -34,9 +34,9 @@ Given(
 		cy.get('@pokemon-team-request').then(response => {
 			attFileAllure(response.body, 'response', 'pokemon-team-error')
 
-			commonDataPostTeam.responseError = response.body[0].description
+			commonData.responseError = response.body[0].description
 
-			commonDataPostTeam.statusCodeError = response.body[0].code
+			commonData.statusCodeError = response.body[0].code
 		})
 	}
 )
@@ -67,9 +67,9 @@ Given(
 		cy.get('@pokemon-team-request').then(response => {
 			attFileAllure(response.body, 'response', 'pokemon-team-error')
 
-			commonDataPostTeam.responseError = response.body[0].description
+			commonData.responseError = response.body[0].description
 
-			commonDataPostTeam.statusCodeError = response.body[0].code
+			commonData.statusCodeError = response.body[0].code
 		})
 	}
 )
@@ -100,9 +100,9 @@ Given(
 		cy.get('@pokemon-team-request').then(response => {
 			attFileAllure(response.body, 'response', 'pokemon-team-error')
 
-			commonDataPostTeam.responseError = response.body[0].description
+			commonData.responseError = response.body[0].description
 
-			commonDataPostTeam.statusCodeError = response.body[0].code
+			commonData.statusCodeError = response.body[0].code
 		})
 	}
 )
