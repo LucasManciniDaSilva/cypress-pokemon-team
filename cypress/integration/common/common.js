@@ -1,4 +1,5 @@
 export let commonData = {}
+import { defineStep } from 'cypress-cucumber-preprocessor/steps'
 import { createPokemonTeam } from '../../fixtures/pokemonTeamRequest'
 import { commonDataPostTeam } from '../cucumber-test/postPokemonTeam/postPokemonTeamStep'
 
@@ -49,7 +50,7 @@ defineStep(
 
 		cy.get('@pokemon-team-request').then(response => {
 			commonData.teamNameResponse = response.headers.teamname
-			commonData.statusCodePostTeam = response.status
+			commonData.statusCodeTeam = response.status
 		})
 	}
 )
@@ -62,3 +63,7 @@ defineStep(
 		expect(commonData.statusCodeError).to.equal(status)
 	}
 )
+
+defineStep('Verify if the status code is {int}', code => {
+	expect(commonData.statusCodeTeam).to.equal(code)
+})

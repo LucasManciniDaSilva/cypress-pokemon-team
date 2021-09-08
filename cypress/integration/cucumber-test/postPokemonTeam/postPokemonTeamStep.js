@@ -10,10 +10,6 @@ When(
 	}
 )
 
-Then('Verify if the status code is {int}', code => {
-	expect(commonData.statusCodePostTeam).to.equal(code)
-})
-
 Given(
 	'I perform a POST request for {string} informing a teamName that already exists',
 	path => {

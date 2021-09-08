@@ -11,6 +11,19 @@ function createPokemonTeam(teamPokemon) {
 	return bodyPokemonTeamRequest
 }
 
+function updatePokemonTeam() {
+	let bodyUpdatePokemonTeamRequest = {
+		firstPokemon: 'Charmander',
+		secondPokemon: 'Eevee',
+		thirdPokemon: 'Quilava',
+		fourthPokemon: 'Umbreon',
+		fifthPokemon: 'Magikarp',
+		lastPokemon: 'Dratini',
+	}
+	return bodyUpdatePokemonTeamRequest
+}
+
 module.exports = {
 	createPokemonTeam,
+	updatePokemonTeam,
 }

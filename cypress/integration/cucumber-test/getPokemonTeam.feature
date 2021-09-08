@@ -8,5 +8,11 @@ Feature: Tests GET Pokemon Team
 
   @ct002_get_pokemon_team
   Scenario: [CT_002] - Get a Pokemon Team informing a team that not exists
-    Given I inform a teamName in the path 'team/' that not exists
+    Given  I inform a teamName to 'GET' request for 'team/' that not exists
     Then Verify if returning the message 'Pokemon Team Not Found' and response code '404.001'
+
+
+  @ct003_get_pokemon_team
+  Scenario: [CT_003] - Get a Pokemon Team informing nothing in the path
+    Given I inform a teamName in the request 'GET' 'team/' informing nothing in the path
+    Then Verify if the status code is 405
